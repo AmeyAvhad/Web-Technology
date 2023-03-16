@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1><strong>Registration Form</strong></h1>
+    <form>
+        First Name: <input type="text" required/>&ensp; Last Name: <input type="text" required/>
+        <br><br>Roll No: <input type="number" min="1"/>
+        <br><br>Email: <input type="email"/>
+        <br><br>Phone No.: <input type="number" maxlength="10"/>
+        <br><br>UserName: <input type="text" pattern="[a-zA-Z0-9]"/>
+        <br><br>Password: <input type="password"/>
+        <br><br>Linkedin: <input type="url"/>
+        <br><br>Date Of Birth: <input type="date"/>
+        <br><br>Gender:&emsp;<input type="radio"/><label>Male</label>&emsp;<input type="radio"/><label>Female</label>
+        <br><br><label for="Year">Year: </label><select name="Year" id="Year">
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+        <br><br>Degree: <input type="text" list="degree"/>
+        <datalist id="degree">
+            <option value="MBA" label="MBA"></option>
+            <option value="BBA" label="BBA"></option>
+            <option value="ENGINEERING" label="Engineering"></option>
+            <option value="BSC" label="bsc"></option>
+        </datalist>
+        <br><br>Skills: <br><input type="checkbox"/><label>HTML</label>
+                        <br><input type="checkbox"/><label>CSS</label>
+                        <br><input type="checkbox"/><label>Javascipt</label>
+                        <br><input type="checkbox"/><label>Python</label>
+        <br><br>Alloted Exam Slot: <input type="datetime-local"/>
+        <br><br><input type="submit"/>&ensp;<input type="reset"/>
+    </form>
+</body>
+</html>
